@@ -1,16 +1,16 @@
 body{
     background-image: url("пробный-2.jpg");
-      }
+}	
 
 h1{
     text-align: center;
     font-size: xx-large; 
     font-style: italic ;
     color: #FF032B;
-    }
-    
+}
+
 h2{
     text-align: center;
     font-size: xx-large;
     color: #3602FC;
-    }
+}
