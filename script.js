@@ -15,9 +15,24 @@ function hexoClock() {
     
     var thour=diff%24; 
     diff=Math.floor(diff/24);
-    
+    var days = diff % 10; 
+  
     var clockString = "до него осталось ";
-    clockString+= diff.toString() + " д. и ";
+    if(days===0){
+        days = " дней ";
+    }
+    else
+    if(days===1){
+        days = " день ";
+    }
+    else
+    if(days > 4){
+        days = " дней ";
+    }
+    else{
+        days = " дня ";
+    }
+    clockString+= diff.toString() + days;
     clockString+= thour.toString() + ':';
     clockString+= tmin.toString() + ':';
     clockString+= tsec.toString();
