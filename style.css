@@ -1,11 +1,12 @@
 body{
-    background-image: url("снежинки.gif");
-    background-color: #8696f8; 
+    background-image: url("снежинки.gif"); 
+    background-color: #8696f8;
     background-repeat: repeat-x;
-    background-size: 5% 35%;   
-     
-}	
+    background-size: 5% 20%; 
 
+    /* ПОКА не понимаю как сделать снеговика внизу фоновым рисунком
+        background-image: url("снеговик-с-красными-пуговицами.png") right bottom no-repeat;  */
+}
   h1{
     text-align: center;
     font-size: xx-large; 
