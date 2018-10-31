@@ -16,18 +16,21 @@
 */
 	background-color: #CBD9D4;
 }
-
+#happyNewYear{
+	text-align: center;
+}
 .header{
     background-image: url("снежинки.gif");
-    height: 80px;
+    height: 70px;
     width:100%;
 }
 .content{
     min-height:400px;
-    width:56%;
+    width:60%;
     float: left;
 }
 #clock{
+	margin-top:80px;
     text-align: center;
     font-size: xx-large; 
     font-style: italic ;
@@ -35,13 +38,13 @@
 } 
 .sidebar-1{
     background-image: url("снежинки.gif");
-    width:22%;
+    width:20%;
     min-height:400px;
     float: left;
 }
 .sidebar-2{
     background-image: url("снежинки.gif");
-    width:22%;
+    width:20%;
     min-height:400px;
     float: left;
 }
