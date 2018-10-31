@@ -17,22 +17,26 @@ function hexoClock() {
     diff=Math.floor(diff/24);
     var days = diff % 10; 
   
-    var clockString = "до него осталось ";
+    var clockString = "до него ";
     if(days===0){
-        days = " дней ";
-    }
-    else
-    if(days===1){
-        days = " день ";
-    }
-    else
-    if(days > 4){
-        days = " дней ";
+    	clockString+= "осталось "
     }
     else{
-        days = " дня ";
+	    if(days===1){
+	    	clockString+= "остался "
+	        days = " день и ";
+	    }
+	    else{
+	    	clockString+= "осталось и "
+		    if(days > 4){
+		        days = " дней ";
+		    }
+		    else{
+		        days = " дня ";
+		    }
+	    }
+	    clockString+= diff.toString() + days;
     }
-    clockString+= diff.toString() + days;
     clockString+= thour.toString() + ':';
     clockString+= tmin.toString() + ':';
     clockString+= tsec.toString();
