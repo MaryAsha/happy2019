@@ -10,15 +10,19 @@
 *html.row {height:1%;}
 .row {display:block;}
 
+.cbc{
+/*	
+	background-color: #8696f8;
+*/
+	background-color: #CBD9D4;
+}
+
 .header{
-    background-color: #8696f8;
     background-image: url("снежинки.gif");
     height: 80px;
     width:100%;
 }
 .content{
-    background-color: #8696f8;
-    /*background-image: url("фон-с-текстурой.jpg");*/
     min-height:400px;
     width:56%;
     float: left;
@@ -30,33 +34,32 @@
     color: #3602fc;
 } 
 .sidebar-1{
-    background-color: #8696f8;
     background-image: url("снежинки.gif");
     width:22%;
     min-height:400px;
     float: left;
 }
 .sidebar-2{
-    background-color: #8696f8;
     background-image: url("снежинки.gif");
     width:22%;
     min-height:400px;
     float: left;
 }
 .footer {
-    background-color:#8696f8;
     height: 250px;
     margin-top:0px;
     width:100%;
 }
-/*body{
+/*
+
+body{
     background-image: url("снежинки.gif"); 
     background-color: #8696f8;
     background-repeat: repeat-x;
     background-size: 5% 20%; 
 
-    /* ПОКА не понимаю как сделать снеговика внизу фоновым рисунком
-        background-image: url("снеговик-с-красными-пуговицами.png") right bottom no-repeat;
+    ПОКА не понимаю как сделать снеговика внизу фоновым рисунком
+    background-image: url("снеговик-с-красными-пуговицами.png") right bottom no-repeat;
 }
   
-/*
+*/
