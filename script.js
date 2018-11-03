@@ -2,6 +2,8 @@ var clock = document.getElementById('clock');
 
 function hexoClock() {
 	var ny = new Date(2019,0,1);
+//	test Dates:
+//	var ny = new Date(2018,10,25);
     var now = new Date();
     var diff = Math.floor((ny-now)/1000);
     
@@ -15,28 +17,35 @@ function hexoClock() {
     
     var thour=diff%24; 
     diff=Math.floor(diff/24);
-    var days = diff % 10; 
-  
+    
     var clockString = "до него ";
-    if(days===0){
+    if(diff===0){
     	clockString+= "осталось "
     }
     else{
-	    if(days===1){
-	    	clockString+= "остался "
-	        days = " день и ";
-	    }
-	    else{
-	    	clockString+= "осталось и "
-		    if(days > 4){
-		        days = " дней ";
-		    }
-		    else{
-		        days = " дня ";
-		    }
-	    }
-	    clockString+= diff.toString() + days;
+    	if(diff>10 && diff<20){
+    		clockString+= "осталось "
+    		days = " дней и "
+    	}
+    	else{
+    		var days = diff % 10; 
+    		if(days===1){
+    			clockString+= "остался ";
+    			days = " день и "
+    		}
+    		else{
+    			clockString+= "осталось "
+				if(days===0 || days > 4){
+					days = " дней и ";
+				}
+				else{
+					days = " дня и ";
+				}
+    		}
+    	}
+    	clockString+= diff.toString() + days;
     }
+  
     clockString+= thour.toString() + ':';
     clockString+= tmin.toString() + ':';
     clockString+= tsec.toString();
