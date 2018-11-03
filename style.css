@@ -29,12 +29,18 @@
     width:60%;
     float: left;
 }
-#clock{
+#str_before_clock{
 	margin-top:80px;
     text-align: center;
     font-size: xx-large; 
     font-style: italic ;
     color: #3602fc;
+} 
+#clock{
+    text-align: center;
+    font-size: xx-large; 
+    font-style: italic ;
+    color: #A3111D;
 } 
 .sidebar-1{
     background-image: url("снежинки.gif");
