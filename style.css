@@ -13,6 +13,9 @@ body{
 .snow{
     background-image: url("снежинки.gif");
 }
+.freez{
+	position: fixed;
+}
 .left{
 	position: absolute;
 	top: 0%;
@@ -43,4 +46,15 @@ body{
 }
 #snow-under-header{
 	height:80px;
+}
+.sidebar img.tree{
+	height: 100px;
+	margin-left: 35%;
+	padding-bottom: 2%;
+}
+.content img.tree{
+	height: 500px;
+	margin-top: 10%;
+	margin-left: 15%;
+	position: fixed;
 }
