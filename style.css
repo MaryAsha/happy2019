@@ -1,36 +1,36 @@
-.row:after{
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content:" ";
-    clear: both;
-    height:0;
+body{
+	font-family: "Times New Roman", serif;
 }
-.row {display: inline-block;}
-*html.row {height:1%;}
-.row {display:block;}
-
-.cbc{
-/*	
-	background-color: #8696f8;
-*/
-	background-color: #CBD9D4;
-}
-#happyNewYear{
-	text-align: center;
-}
-.header{
-    background-image: url("снежинки.gif");
-    height: 70px;
-    width:100%;
-}
+.cbc{background-color:#CBD9D4;}
 .content{
-    min-height:400px;
     width:60%;
-    float: left;
+    height:100%;
+} 
+.sidebar{
+    height:100%;
+    width:20%;
+}
+.snow{
+    background-image: url("снежинки.gif");
+}
+.left{
+	position: absolute;
+	top: 0%;
+    left: 0%;
+}
+.center{
+	position: absolute;
+	top: 0%;
+    left: 20%;
+}
+.right{
+	position: absolute;
+	top: 0%;
+    left: 80%;
 }
 #str_before_clock{
-	margin-top:80px;
+	font-family: Georgia;
+	margin-top: 40px;
     text-align: center;
     font-size: xx-large; 
     font-style: italic ;
@@ -39,36 +39,8 @@
 #clock{
     text-align: center;
     font-size: xx-large; 
-    font-style: italic ;
     color: #A3111D;
-} 
-.sidebar-1{
-    background-image: url("снежинки.gif");
-    width:20%;
-    min-height:400px;
-    float: left;
 }
-.sidebar-2{
-    background-image: url("снежинки.gif");
-    width:20%;
-    min-height:400px;
-    float: left;
+#snow-under-header{
+	height:80px;
 }
-.footer {
-    height: 250px;
-    margin-top:0px;
-    width:100%;
-}
-/*
-
-body{
-    background-image: url("снежинки.gif"); 
-    background-color: #8696f8;
-    background-repeat: repeat-x;
-    background-size: 5% 20%; 
-
-    ПОКА не понимаю как сделать снеговика внизу фоновым рисунком
-    background-image: url("снеговик-с-красными-пуговицами.png") right bottom no-repeat;
-}
-  
-*/
