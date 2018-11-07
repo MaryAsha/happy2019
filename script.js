@@ -1,7 +1,10 @@
+var strBeforeClock = document.getElementById('str_before_clock');
 var clock = document.getElementById('clock');
 
 function hexoClock() {
 	var ny = new Date(2019,0,1);
+//	test Dates:
+//	var ny = new Date(2018,10,25);
     var now = new Date();
     var diff = Math.floor((ny-now)/1000);
     
@@ -15,33 +18,43 @@ function hexoClock() {
     
     var thour=diff%24; 
     diff=Math.floor(diff/24);
-    var days = diff % 10; 
-  
-    var clockString = "до него ";
-    if(days===0){
-    	clockString+= "осталось "
+    
+    var clockStringUp = "до него "; 
+    var clockStringDown; 
+    var days;
+    if(diff===0){
+    	clockStringUp+= "осталось";
     }
     else{
-	    if(days===1){
-	    	clockString+= "остался "
-	        days = " день и ";
-	    }
-	    else{
-	    	clockString+= "осталось и "
-		    if(days > 4){
-		        days = " дней ";
-		    }
-		    else{
-		        days = " дня ";
-		    }
-	    }
-	    clockString+= diff.toString() + days;
+    	if(diff>10 && diff<20){
+    		clockStringUp+= "осталось";
+    		days = " дней и ";
+    	}
+    	else{
+    		days = diff % 10; 
+    		if(days===1){
+    			clockStringUp+= "остался";
+    			days = " день и ";
+    		}
+    		else{
+    			clockStringUp+= "осталось";
+				if(days===0 || days > 4){
+					days = " дней и ";
+				}
+				else{
+					days = " дня и ";
+				}
+    		}
+    	}
+    	clockStringDown = diff.toString() + days;
     }
-    clockString+= thour.toString() + ':';
-    clockString+= tmin.toString() + ':';
-    clockString+= tsec.toString();
+  
+    clockStringDown+= thour.toString() + ':';
+    clockStringDown+= tmin.toString() + ':';
+    clockStringDown+= tsec.toString();
 
-    clock.textContent = clockString;
+    strBeforeClock.textContent = clockStringUp;
+    clock.textContent = clockStringDown;
 }
 
 hexoClock();

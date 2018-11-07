@@ -1,72 +1,64 @@
-.row:after{
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content:" ";
-    clear: both;
-    height:0;
+body{
+	font-family: "Times New Roman", serif;
 }
-.row {display: inline-block;}
-*html.row {height:1%;}
-.row {display:block;}
-
-.cbc{
-/*	
-	background-color: #8696f8;
-*/
-	background-color: #CBD9D4;
-}
-#happyNewYear{
-	text-align: center;
-}	
-#top-img{
-	width:100%;
-	
-}
-.header{
-    background-image: url("снежинки.gif");
-    height: 70px;
-    width:100%;
-}
+.cbc{background-color:#CBD9D4;}
 .content{
-    min-height:400px;
     width:60%;
-    float: left;
+    height:100%;
+} 
+.sidebar{
+    height:100%;
+    width:20%;
 }
-#clock{
-	margin-top:80px;
+.snow{
+    background-image: url("снежинки.gif");
+}
+.freez{
+	position: fixed;
+}
+.left{
+	position: absolute;
+	top: 0%;
+    left: 0%;
+}
+.center{
+	position: absolute;
+	top: 0%;
+    left: 20%;
+}
+.right{
+	position: absolute;
+	top: 0%;
+    left: 80%;
+}
+#str_before_clock{
+	font-family: Georgia;
+	margin-top: 40px;
     text-align: center;
     font-size: xx-large; 
     font-style: italic ;
     color: #3602fc;
+    padding-top: 60px;
 } 
-.sidebar-1{
-    background-image: url("снежинки.gif");
-    width:20%;
-    min-height:400px;
-    float: left;
+#clock{
+    text-align: center;
+    font-size: xx-large; 
+    color: #A3111D;
 }
-.sidebar-2{
-    background-image: url("снежинки.gif");
-    width:20%;
-    min-height:400px;
-    float: left;
+#snow-under-header{
+	height:80px;
 }
-.footer {
-    height: 250px;
-    margin-top:0px;
-    width:100%;
+.sidebar img.tree{
+	height: 100px;
+	margin-left: 35%;
+	padding-bottom: 2%;
 }
-/*
-
-body{
-    background-image: url("снежинки.gif"); 
-    background-color: #8696f8;
-    background-repeat: repeat-x;
-    background-size: 5% 20%; 
-
-    ПОКА не понимаю как сделать снеговика внизу фоновым рисунком
-    background-image: url("снеговик-с-красными-пуговицами.png") right bottom no-repeat;
+.content img.tree{
+	height: 500px;
+	margin-top: 10%;
+	margin-left: 15%;
+	position: fixed;
 }
-  
-*/
+#main-text{
+    padding-top: 60px;
+}
