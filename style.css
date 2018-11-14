@@ -1,10 +1,88 @@
 body{
+    background-color: #CBD9D4;
+    margin: 0px;
+    
+}
+.header{
+    background-image: url("верхняя-веточка-с-блеском.gif");
+    background-color: #CBD9D4;
+    height:110px;
+    width:100%;
+}
+.snow-up{
+    background-image: url("снежинки.gif");
+    height:100%;
+    width:100%;
+}
+.content{
+    background-color: #CBD9D4;
+    min-height:600px;
+    width:80%;
+    float: left;
+}
+.sidebar-left{
+    background-color: #CBD9D4;
+    background-image: url("снежинки.gif");
+    min-height:600px;
+    width:10%;
+    float: left;
+}
+.sidebar-right{
+    background-color: #CBD9D4;
+    background-image: url("снежинки.gif");
+    min-height:600px;
+    width:10%;
+    float: left;
+}
+#str_before_clock{
+    text-align: center;
+    font-size: 30px;
+    color: #00A2BB;
+    text-shadow: #ffffff 3px -5px 5px;
+}
+#clock{
+    color: #829D07;
+    text-align: center;
+    font-size: 35px;
+    text-shadow: #ffffff 3px -5px 5px;
+}
+.poem{
+    font-size: 150%;
+    color:#1B3E17;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+html {
+    background-color:#1BD9D4;  /*Сделано специально, чтобы показать, что основное не достает до краев страницы
+}
+body{
 	font-family: "Times New Roman", serif;
 }
 .cbc{background-color:#CBD9D4;}
 
 .header{
-    
     position: relative;
     height:110px;
     width:100%;
@@ -32,38 +110,28 @@ body{
 } 
 .poem{
     font-size: 150%;
-    color:#588713;
+    color:#1B3E17;
     text-align: center;
+    background-image:url("Елка.png");
+    background-repeat: no-repeat;
+    position: right;
 }
 .sidebar{
-    height:100%;
     width:15%;
-}
-/*
-.snow{
-    background-image: url("снежинки.gif");
- }
-
 }
 .left{
 	position: absolute;
 	top: 0%;
     left: 0%;
 }
-.center{
-	position: absolute;
-	top: 0%;
-    left: 15%;
-}
 .right{
 	position: absolute;
 	top: 0%;
     left: 85%;
 }
-#snow-under-header{
-	height:80px;
-}
-
+.snow{
+    background-image: url("снежинки.gif");
+ }
 .content img.tree{
 	height: 500px;
 	margin-top: 10%;
@@ -71,6 +139,4 @@ body{
 	position: fixed;
 }
 
-.freez{
-	position:absolute;
 */
