@@ -14,25 +14,34 @@ body{
     height:100%;
     width:100%;
 }
+#main-text{
+    padding-top: 0px;
+    z-index: 3;
+    position: relative;
+}
 .content{
     background-color: #CBD9D4;
     min-height:600px;
-    width:80%;
+    width:64%;
     float: left;
 }
 .sidebar-left{
     background-color: #CBD9D4;
     background-image: url("снежинки.gif");
     min-height:600px;
-    width:10%;
+    width:18%;
     float: left;
+    z-index: 2;
+    position: relative;
 }
 .sidebar-right{
     background-color: #CBD9D4;
     background-image: url("снежинки.gif");
     min-height:600px;
-    width:10%;
+    width:18%;
     float: left;
+    z-index: 1;
+    position: relative;
 }
 #str_before_clock{
     text-align: center;
@@ -46,10 +55,17 @@ body{
     font-size: 35px;
     text-shadow: #ffffff 3px -5px 5px;
 }
+.picture{
+    float: left;
+    width:35%;
+    text-align:right;
+}
 .poem{
     font-size: 150%;
     color:#1B3E17;
+    float: right;
     text-align: center;
+    width: 65%;
 }
 
 
@@ -90,9 +106,6 @@ body{
     background-image: url("верхняя-веточка-с-блеском.gif");
 } 
  
-#main-text{
-    padding-top: 0px;
-}
  
 #clock{
     text-align: center;
