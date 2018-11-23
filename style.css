@@ -4,10 +4,14 @@ body{
     
 }
 .header{
-    background-image: url("верхняя-веточка-с-блеском.gif");
+    background-image: url("верхняя-веточка-с-блеском-исправлено.gif");
     background-color: #CBD9D4;
     height:110px;
     width:100%;
+    position: fixed;
+    top: -10px;
+    z-index: 3;
+    background-repeat: repeat-x;
 }
 .snow-up{
     background-image: url("снежинки.gif");
@@ -16,7 +20,7 @@ body{
 }
 #main-text{
     padding-top: 0px;
-    z-index: 3;
+    z-index: 5;
     position: relative;
 }
 .content{
@@ -28,7 +32,7 @@ body{
 .sidebar-left{
     background-color: #CBD9D4;
     background-image: url("снежинки.gif");
-    min-height:600px;
+    min-height:750px;
     width:18%;
     float: left;
     z-index: 2;
@@ -37,7 +41,7 @@ body{
 .sidebar-right{
     background-color: #CBD9D4;
     background-image: url("снежинки.gif");
-    min-height:600px;
+    min-height:750px;
     width:18%;
     float: left;
     z-index: 1;
@@ -47,13 +51,13 @@ body{
     text-align: center;
     font-size: 30px;
     color: #00A2BB;
-    text-shadow: #ffffff 3px -5px 5px;
+    text-shadow: #ffffff 0px 7px 6px;
 }
 #clock{
     color: #829D07;
     text-align: center;
     font-size: 35px;
-    text-shadow: #ffffff 3px -5px 5px;
+    text-shadow: #ffffff 0px 7px 6px;
 }
 .picture{
     float: left;
@@ -66,10 +70,28 @@ body{
     float: right;
     text-align: center;
     width: 65%;
+    text-shadow: #ffffff 0px 7px 6px;
 }
+.fireworks{
+    position: fixed;
+    top: 230px;
+    left: 300px;
+    z-index: 4;
+    }
+    
+.fireworks-1{
+    position: fixed;
+    top: 150px;
+    right: 300px;
+    z-index: 5;
+    }
 
-
-
+.fireworks-2{
+    position: fixed;
+    top: 570px;
+    right: 350px;
+    z-index: 5;
+    }
 
 
 
