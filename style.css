@@ -4,7 +4,7 @@ body{
     
 }
 .header{
-    background-image: url("верхняя-веточка-с-блеском-исправлено.gif");
+    background-image: url("img/верхняя-веточка-с-блеском-исправлено.gif");
     background-color: #CBD9D4;
     height:110px;
     width:100%;
@@ -14,7 +14,7 @@ body{
     background-repeat: repeat-x;
 }
 .snow-up{
-    background-image: url("снежинки.gif");
+    background-image: url("img/снежинки.gif");
     height:100%;
     width:100%;
 }
@@ -31,7 +31,7 @@ body{
 }
 .sidebar-left{
     background-color: #CBD9D4;
-    background-image: url("снежинки.gif");
+    background-image: url("img/снежинки.gif");
     min-height:680px;
     width:18%;
     float: left;
@@ -40,7 +40,7 @@ body{
 }
 .sidebar-right{
     background-color: #CBD9D4;
-    background-image: url("снежинки.gif");
+    background-image: url("img/снежинки.gif");
     min-height:680px;
     width:18%;
     float: left;
