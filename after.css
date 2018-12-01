@@ -6,7 +6,8 @@ body {
 div.content{
     height: 700px;
     width:100%;
-    background-image: url("img/2019!.gif"); 
+    background-image: url("img/макет-первый-2019.gif"); 
+    float: center;;
 }
 
 .fireworks{
