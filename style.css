@@ -109,83 +109,12 @@ body{
     left: 50%; 
   
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-html {
-    background-color:#1BD9D4;  /*Сделано специально, чтобы показать, что основное не достает до краев страницы
+a#poemsrc:link, a#poemsrc:visited {
+	font-size: 0.5em; 
+    color: rgb(166, 185, 136);
+    background-color: transparent;
+    text-decoration: none;
 }
-body{
-	font-family: "Times New Roman", serif;
+a#poemsrc:hover, a#poemsrc:active {
+    color: red;
 }
-.cbc{background-color:#CBD9D4;}
-
-.header{
-    position: relative;
-    height:110px;
-    width:100%;
-    background-color: #CBD9D4;
-    background-image: url("верхняя-веточка-с-блеском.gif");
-} 
- 
- 
-#clock{
-    text-align: center;
-    font-size: xx-large; 
-    color: #A3111D;
-}
-#str_before_clock{
-	font-family: Georgia;
-	margin-top: 10px;
-    text-align: center;
-    font-size: xx-large; 
-    font-style: italic ;
-    color: #3602fc;
-    padding-top: 0px;
-} 
-.poem{
-    font-size: 150%;
-    color:#1B3E17;
-    text-align: center;
-    background-image:url("Елка.png");
-    background-repeat: no-repeat;
-    position: right;
-}
-.sidebar{
-    width:15%;
-}
-.left{
-	position: absolute;
-	top: 0%;
-    left: 0%;
-}
-.right{
-	position: absolute;
-	top: 0%;
-    left: 85%;
-}
-.snow{
-    background-image: url("снежинки.gif");
- }
-.content img.tree{
-	height: 500px;
-	margin-top: 10%;
-	margin-left: 15%;
-	position: fixed;
-}
-
-*/
