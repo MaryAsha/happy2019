@@ -1,0 +1,38 @@
+body {
+    background-color: #010325;
+}
+
+
+div.content{
+    height: 700px;
+    width:100%;
+    background-image: url("img/2019!.gif"); 
+}
+
+.fireworks{
+    position: fixed;
+    top: 500px;
+    left: 1100px;
+    z-index: 1;
+    }
+    
+.fireworks-1{
+    position: fixed;
+    top: 150px;
+    right: 300px;
+    z-index: 1;
+    }
+
+.fireworks-2{
+    position: fixed;
+    top: 150px;
+    left: 200px;
+    z-index: 5;
+    }
+    
+.fireworks-3{
+    position: fixed;
+    top: 500px;
+    left: 100px;
+    z-index: 5;
+    }
