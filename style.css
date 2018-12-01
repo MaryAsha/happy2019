@@ -9,10 +9,25 @@ body{
     text-shadow: #ffffff 0px 7px 6px;
 }
 
+div.border{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	z-index: 1;
+}
+div#top-decoration{
+	background-image: url(img/top_decoration.gif);
+	top: -15px;
+}
+div#bottom-decoration{
+	background-image: url(img/snowdrift.png);
+	bottom: -10px;
+}
+
 div#content{
 	width: 900px;
 	position: absolute;
-	top: 0;
+	top: 50px;
 	right: 0;
 	bottom: 0;
 	left: 0;
