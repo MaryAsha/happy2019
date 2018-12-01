@@ -32,7 +32,7 @@ body{
 .sidebar-left{
     background-color: #CBD9D4;
     background-image: url("снежинки.gif");
-    min-height:750px;
+    min-height:680px;
     width:18%;
     float: left;
     z-index: 2;
@@ -41,10 +41,10 @@ body{
 .sidebar-right{
     background-color: #CBD9D4;
     background-image: url("снежинки.gif");
-    min-height:750px;
+    min-height:680px;
     width:18%;
     float: left;
-    z-index: 1;
+    z-index: 2;
     position: relative;
 }
 #str_before_clock{
@@ -60,18 +60,21 @@ body{
     text-shadow: #ffffff 0px 7px 6px;
 }
 .picture{
-    float: left;
-    width:35%;
-    text-align:right;
+    position: fixed;
+    width:40%;
+    top: 200px;
+    left: 400px;
+    z-index: 4;
 }
 .poem{
-    font-size: 150%;
+    font-size: 160%;
     color:#1B3E17;
     float: right;
     text-align: center;
     width: 65%;
     text-shadow: #ffffff 0px 7px 6px;
 }
+/*
 .fireworks{
     position: fixed;
     top: 230px;
@@ -92,9 +95,20 @@ body{
     right: 350px;
     z-index: 5;
     }
-
-
-
+*/    
+.picture-1{
+    position: fixed;
+    bottom: 0px;
+    right: 50%;  
+     
+    }
+    
+.picture-2{
+    position: fixed;
+    bottom: 0px;
+    left: 50%; 
+  
+    }
 
 
 
