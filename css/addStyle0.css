@@ -2,14 +2,11 @@ body{
     background-color: #cbd9d4;
 }
 .with-shadow{
-    text-shadow: #ffffff 0px 7px 6px;
+    text-shadow: rgb(255, 255, 255) 0px 7px 6px;
 }
 span#str_before_clock, span#clock{
     color: rgb(6, 7, 249);
 }
-p#poem{
-    color:#1B3E17;
-}
-a#poemsrc:link, a#poemsrc:visited {
-    color: rgb(166, 185, 136);
+p#poem, a#poemsrc:link, a#poemsrc:visited {
+    color: rgb(42, 46, 105);
 }

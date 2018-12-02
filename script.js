@@ -80,8 +80,8 @@ function hexoClock() {
     strBeforeClock.textContent = clockStringUp;
     clock.textContent = clockStringDown;
 
-	var style = "css/addStyle" + styles[now.getHours()] + ".css";
-	addStyle.href = style;
+    var style = "css/addStyle" + styles[now.getHours()] + ".css";
+    addStyle.href = style;
 }
 
 hexoClock();
