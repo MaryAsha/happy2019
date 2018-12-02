@@ -3,7 +3,7 @@ body{
 }
 
 .snow{
-	background-image: url(../img/snowflakes.gif);
+	//background-image: url(../img/snowflakes.gif);
 }
 
 div.border{
@@ -38,15 +38,14 @@ p#time{
 span#str_before_clock, span#clock{
     font-size: 40px;
     font-style: italic;
-    color: rgb(6, 7, 249);
 }
 
 img#christmas-tree{
 	float: left;
 }
+
 p#poem{
     font-size: 160%;
-    color:#1B3E17;
     text-align: center;
     font-style: italic;
     line-height: 1.8;
@@ -54,7 +53,6 @@ p#poem{
 }
 a#poemsrc:link, a#poemsrc:visited {
 	font-size: 0.5em; 
-    color: rgb(166, 185, 136);
     background-color: transparent;
     text-decoration: none;
 }

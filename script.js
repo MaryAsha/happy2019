@@ -59,6 +59,7 @@ function hexoClock() {
     clock.textContent = clockStringDown;
 
     if( (tsec%5)===0 ){
+//    if( false ){
 		if(colorDirection === "forward"){
 			currColorNum++;
 			if(currColorNum === 5){
