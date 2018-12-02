@@ -1,12 +1,9 @@
 body{
-    background-color: #CBD9D4;
     margin: 0px;
 }
+
 .snow{
 	background-image: url(../img/snowflakes.gif);
-}
-.with-shadow{
-    text-shadow: #ffffff 0px 7px 6px;
 }
 
 div.border{

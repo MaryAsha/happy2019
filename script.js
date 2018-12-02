@@ -1,6 +1,6 @@
 var strBeforeClock = document.getElementById('str_before_clock');
 var clock = document.getElementById('clock');
-var colorTable = ["#cbd9d4","#bbcac5","#9294bc","#595c84","#2a2e69","#010325"];
+var addStyle = document.getElementById('addStyle');
 var currColorNum = 0;
 var colorDirection = "forward";
 function hexoClock() {
@@ -71,8 +71,8 @@ function hexoClock() {
 				colorDirection = "forward";
 			}
 		}
-		color = colorTable[currColorNum];
-		document.body.style.backgroundColor = color;
+		var style = "css/addStyle" + currColorNum + ".css";
+		addStyle.href = style;
     }
 }
 

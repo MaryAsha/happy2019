@@ -1,0 +1,6 @@
+body{
+    background-color: #2a2e69;
+}
+.with-shadow{
+    text-shadow: #ffffff 0px 7px 6px;
+}
