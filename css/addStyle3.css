@@ -7,9 +7,6 @@ body{
 span#str_before_clock, span#clock{
     color: rgb(204, 204, 204);
 }
-p#poem{
+p#poem, a#poemsrc:link, a#poemsrc:visited{
     color: rgb(204, 204, 204);
-}
-a#poemsrc:link, a#poemsrc:visited {
-    color: #595cA4;
 }
