@@ -3,7 +3,7 @@ body{
     margin: 0px;
 }
 .snow{
-	background-image: url(img/snowflakes.gif);
+	background-image: url(../img/snowflakes.gif);
 }
 .with-shadow{
     text-shadow: #ffffff 0px 7px 6px;
@@ -16,11 +16,11 @@ div.border{
 	z-index: 1;
 }
 div#top-decoration{
-	background-image: url(img/top_decoration.gif);
+	background-image: url(../img/top_decoration.gif);
 	top: -15px;
 }
 div#bottom-decoration{
-	background-image: url(img/snowdrift.png);
+	background-image: url(../img/snowdrift.png);
 	bottom: -10px;
 }
 
