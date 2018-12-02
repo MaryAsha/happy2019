@@ -1,12 +1,34 @@
 var strBeforeClock = document.getElementById('str_before_clock');
 var clock = document.getElementById('clock');
 var addStyle = document.getElementById('addStyle');
-var currColorNum = 0;
-var colorDirection = "forward";
+var styles = [
+              5,//0
+              5,//1
+              5,//2
+              5,//3
+              5,//4
+              4,//5
+              4,//6
+              4,//7
+              3,//8
+              3,//9
+              2,//10
+              2,//11
+              1,//12
+              1,//13
+              0,//14
+              0,//15
+              0,//16
+              0,//17
+              1,//18
+              1,//19
+              2,//20
+              3,//21
+              4,//22
+              5]//23
+
 function hexoClock() {
 	var ny = new Date(2019,0,1);
-//	test Dates:
-//	var ny = new Date(2018,10,25);
     var now = new Date();
     var diff = Math.floor((ny-now)/1000);
     
@@ -58,23 +80,8 @@ function hexoClock() {
     strBeforeClock.textContent = clockStringUp;
     clock.textContent = clockStringDown;
 
-    if( (tsec%5)===0 ){
-//    if( false ){
-		if(colorDirection === "forward"){
-			currColorNum++;
-			if(currColorNum === 5){
-				colorDirection = "back";
-			}
-		}
-		else if(colorDirection === "back"){
-			currColorNum--;
-			if(currColorNum === 0){
-				colorDirection = "forward";
-			}
-		}
-		var style = "css/addStyle" + currColorNum + ".css";
-		addStyle.href = style;
-    }
+	var style = "css/addStyle" + styles[now.getHours()] + ".css";
+	addStyle.href = style;
 }
 
 hexoClock();
