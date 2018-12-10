@@ -19,7 +19,7 @@ div#bottom-decoration{
 div#content{
 	width: 900px;
 	position: absolute;
-	top: 50px;
+	top: 100px;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -44,7 +44,8 @@ p#poem{
     text-align: center;
     font-style: italic;
     line-height: 1.8;
-    margin-top: 70px;
+    margin-top: 40px;
+	margin-bottom: 200px;
 }
 a#poemsrc:link, a#poemsrc:visited {
 	font-size: 0.5em; 

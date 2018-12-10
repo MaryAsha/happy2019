@@ -9,22 +9,22 @@ var styles = [
               5,//4
               4,//5
               4,//6
-              4,//7
-              3,//8
-              3,//9
-              2,//10
-              2,//11
-              1,//12
-              1,//13
-              0,//14
-              0,//15
-              0,//16
-              0,//17
-              1,//18
-              1,//19
-              2,//20
-              3,//21
-              4,//22
+              3,//7
+              2,//8
+              1,//9
+              1,//10
+              0,//11
+              0,//12
+              0,//13
+              1,//14
+              1,//15
+              2,//16
+              3,//17
+              3,//18
+              4,//19
+              4,//20
+              5,//21
+              5,//22
               5]//23
 
 function hexoClock() {
@@ -80,8 +80,8 @@ function hexoClock() {
     strBeforeClock.textContent = clockStringUp;
     clock.textContent = clockStringDown;
 
-	var style = "css/addStyle" + styles[now.getHours()] + ".css";
-	addStyle.href = style;
+    var style = "css/addStyle" + styles[now.getHours()] + ".css";
+    addStyle.href = style;
 }
 
 hexoClock();
