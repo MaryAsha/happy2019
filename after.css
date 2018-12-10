@@ -7,7 +7,8 @@ div.content{
     height: 700px;
     width:100%;
     background-image: url("img/макет-первый-2019.gif"); 
-    float: center;;
+    float: center;
+    background-repeat: no-repeat;
 }
 
 .fireworks{
@@ -37,3 +38,11 @@ div.content{
     left: 100px;
     z-index: 5;
     }
+    
+@media (min-widht:720px) and (max-widht:1500px) {
+.content{
+    background-image: url("img/макет-первый-2019-для-мобильного.gif");
+    }
+
+}
+    
