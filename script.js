@@ -1,6 +1,7 @@
 var strBeforeClock = document.getElementById('str_before_clock');
 var clock = document.getElementById('clock');
 var addStyle = document.getElementById('addStyle');
+var mainL = document.getElementById('mainLettering');
 var styles = [
               5,//0
               5,//1
@@ -80,8 +81,13 @@ function hexoClock() {
     strBeforeClock.textContent = clockStringUp;
     clock.textContent = clockStringDown;
 
-    var style = "css/addStyle" + styles[now.getHours()] + ".css";
-    addStyle.href = style;
+// реальная работа
+//    addStyle.href = "css/addStyle" + styles[now.getHours()] + ".css";
+//    mainL.src = "img/congratulation_inscription" + styles[now.getHours()] + ".png"
+
+// отладка
+    addStyle.href = "css/addStyle" + now.getSeconds()%6 + ".css";
+    mainL.src = "img/congratulation_inscription" + now.getSeconds()%6 + ".png"
 }
 
 hexoClock();
