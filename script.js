@@ -5,7 +5,7 @@ function hexoClock() {
 	//real work
 //	var ny = new Date(2019,0,1);
 	//debug
-	var ny = new Date(2018,11,30,21,43,0,0);
+	var ny = new Date(2018,11,30,21,45,0,0);
 	
     var now = new Date();
     var diff = Math.floor((ny-now)/1000);
