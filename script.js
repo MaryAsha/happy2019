@@ -3,9 +3,9 @@ var clock = document.getElementById('clock');
 var mainL = document.getElementById('mainLettering');
 function hexoClock() {
 	//real work
-//	var ny = new Date(2019,0,1);
+	var ny = new Date(2019,0,1);
 	//debug
-	var ny = new Date(2018,11,30,21,45,0,0);
+//	var ny = new Date(2018,11,30,23,28,0,0);
 	
     var now = new Date();
     var diff = Math.floor((ny-now)/1000);
