@@ -1,33 +1,6 @@
 var strBeforeClock = document.getElementById('str_before_clock');
 var clock = document.getElementById('clock');
-var addStyle = document.getElementById('addStyle');
 var mainL = document.getElementById('mainLettering');
-var styles = [
-              5,//0
-              5,//1
-              5,//2
-              5,//3
-              5,//4
-              4,//5
-              4,//6
-              3,//7
-              2,//8
-              1,//9
-              1,//10
-              0,//11
-              0,//12
-              0,//13
-              1,//14
-              1,//15
-              2,//16
-              3,//17
-              3,//18
-              4,//19
-              4,//20
-              5,//21
-              5,//22
-              5]//23
-
 function hexoClock() {
 	var ny = new Date(2019,0,1);
     var now = new Date();
@@ -80,14 +53,9 @@ function hexoClock() {
 
     strBeforeClock.textContent = clockStringUp;
     clock.textContent = clockStringDown;
+    
 
-// реальная работа
-//    addStyle.href = "css/addStyle" + styles[now.getHours()] + ".css";
-//    mainL.src = "img/congratulation_inscription" + styles[now.getHours()] + ".png"
-
-// отладка
-    addStyle.href = "css/addStyle" + now.getSeconds()%6 + ".css";
-    mainL.src = "img/congratulation_inscription" + now.getSeconds()%6 + ".png"
+    mainL.src = "img/congratulation_inscription" + now.getSeconds()%2 + ".png"
 }
 
 hexoClock();
