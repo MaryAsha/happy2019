@@ -6,7 +6,17 @@
     <title>С Новым Годом!</title>
     <style>
     	body{
+    		background-image: url(img/stars.png);
 		    background-color: rgb(1, 3, 37);
+    	}
+    	img.fireworks{
+    		position: absolute;
+    		top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			z-index: 1;
     	}
     	img#hohoho{
     		position: absolute;
@@ -17,17 +27,31 @@
 			margin: auto;
     	}
     	img#red{
-    		z-index: 1;
-    		position: absolute;
-    		top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			width: 100px;
+    		top: -500px;
+			right: -600px;
+			width: 200px;
+    	}
+    	img#blue{
+    		top: 300px;
+			right: -600px;
+			width: 300px;
+    	}
+    	img#orange{
+    		top: 300px;
+			right: 200px;
+			width: 150px;
+    	}
+    	img#green{
+    		top: -400px;
+			right: 400px;
+			width: 250px;
     	}
     </style>
 </head>
 <body>
-	<img id="hohoho" alt="" src="img/2019.gif">
-	<img id="red" src="img/red.gif">
+	<img id="hohoho" alt="" src="img/pig.gif">
+	<img id="red" class="fireworks" src="img/red.gif">
+	<img id="green" class="fireworks" src="img/green.gif">
+	<img id="blue" class="fireworks" src="img/blue.gif">
+	<img id="orange" class="fireworks" src="img/orange.gif">
 </body>
